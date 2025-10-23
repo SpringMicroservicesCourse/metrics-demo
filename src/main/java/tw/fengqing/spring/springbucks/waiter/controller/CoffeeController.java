@@ -62,7 +62,7 @@ public class CoffeeController {
                     String[] arr = StringUtils.split(str, " ");
                     if (arr != null && arr.length == 2) {
                         coffees.add(coffeeService.saveCoffee(arr[0],
-                                Money.of(CurrencyUnit.of("CNY"),
+                                Money.of(CurrencyUnit.of("TWD"),
                                         NumberUtils.createBigDecimal(arr[1]))));
                     }
                 }
